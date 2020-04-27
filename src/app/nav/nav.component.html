@@ -13,6 +13,12 @@
                     <li><a class="navbar-text" href="favorites">Watch List</a></li>
                 </ul>
             </div>
+            <div class="nav-item">
+                <select class="genreFilter" (change)="onChange($event)" [(ngModel)]="genreId">
+                    <option value="0" disabled>GENRES</option>
+                    <option name="genres" *ngFor="let genre of genreList" [value]="genre.id">{{genre.name}}</option>
+                </select>
+            </div>
         </div>
     </div>
 </nav>

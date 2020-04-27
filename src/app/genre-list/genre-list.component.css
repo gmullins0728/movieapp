@@ -1,0 +1,119 @@
+.moviesDiv {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  
+  .movieDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+    padding: 0;
+    width: 211px;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+    /* border: solid 1.5px rgb(204, 199, 199); */
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 6px 1px rgba(247, 247, 247, 0.43);
+    border-radius: 2px;
+    /* border: solid 1px goldenrod; */
+    /* box-shadow: 0 4px 8px 0 rgba(248, 247, 247, 0.2), 0 1px 5px 0 rgba(248, 247, 247, 0.2); */
+    color: rgb(204, 199, 199);
+  }
+  
+  #heartIcon {
+    position: absolute;
+    top: 15.5em;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #heartIcon:hover {
+    color: #ed361a;
+  }
+  
+  .imageDiv {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0em;
+    margin: 5px;
+    height: 275px;
+    border-radius: 1px;
+  }
+  
+  img {
+    shape-image-threshold: inherit;
+  }
+  
+  .textDiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16.7em;
+    padding-left: .25em;
+    line-height: 1.15em;
+  }
+  
+  .movieTitle {
+    position: relative;
+    bottom: .85em;
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1.15rem;
+  }
+  
+  .voteAverage {
+    position: absolute;
+    top: 18.35em;
+    left: 5px;
+    /* background-color: lime; */
+  }
+  
+  #starIcon {
+    position: relative;
+    top: .12em;
+    font-size: 1em;
+    color: rgb(252, 220, 42);
+    /* background-color: purple; */
+  
+  }
+  
+  .errorMsg {
+    color: #ed361a;
+  }
+  
+  .red {
+    color: #ed361a;
+  
+  }
+  
+  .page {
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 35px;
+  
+  }
+  
+  .page p {
+    color: lightgray;
+  }
+  
+  .arrows {
+    color: #eeeeee;
+    font-size: 2rem;
+  }
+  
+  .arrows:hover {
+    color: goldenrod;
+  }

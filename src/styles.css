@@ -75,7 +75,7 @@ body {
 
     .img-responsive:hover {
         transform: scale(1.1);
-        animation: animateRotate 200ms;
+        animation: animateRotate 600ms;
     }
 
     @keyframes animateRotate {
@@ -92,8 +92,8 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        bottom: 100px;
-        left: 200px;
+        bottom: 75px;
+        left: 310px;
         font-size: 18px;
         border: 1px solid rgb(255,133,25);
         background-color: rgb(255,133,25);
