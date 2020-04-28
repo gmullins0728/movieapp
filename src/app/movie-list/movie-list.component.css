@@ -84,3 +84,25 @@ a:hover {
         margin-left: 10px;
     }
 }
+
+@media only screen and (max-width:768px) {
+    .inner-movie-container {
+        width: 75%;
+        margin-left: 50px;
+    }
+    .img-detail{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .movie-container {
+        margin-right: -100px;
+    }
+
+    .img-detail {
+        width: 35%;
+        margin-left: 100px;
+    }
+}
+

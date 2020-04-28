@@ -2,11 +2,11 @@
     <div class="search">
         <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box" placeholder="search">
         <div class="nav-item">
-            <select class="genreFilter" (change)="onChange()" [(ngModel)]="genreId">
-                <option value="0" disabled>GENRES</option>
-                <option name="genres" *ngFor="let genre of genreList" [value]="genre.id">{{genre.name}}</option>
-            </select>
-        </div>
+                <select class="genreFilter" (change)="onChange()" [(ngModel)]="genreId">
+                    <option value="0" disabled>GENRES</option>
+                    <option name="genres" *ngFor="let genre of genreList" [value]="genre.id">{{genre.name}}</option>
+                </select>
+            </div>
     </div>
         <section>
             <div class="movie-container">
