@@ -19,6 +19,7 @@ export class MovieService {
 
   private _movieList = new BehaviorSubject<any[]>([]);
   movieList = this._movieList.asObservable();
+  
 
   updateMovieList = newList => this._movieList.next(newList);
   getTheMovies = () => this.http.get(this.apiUrl);

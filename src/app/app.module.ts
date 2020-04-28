@@ -12,7 +12,6 @@ import { RouterModule } from '@angular/router';
 import { StorageServiceModule } from 'ngx-webstorage-service';
 import { LocalStorageService } from './local-storage.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GenreListComponent } from './genre-list/genre-list.component';
 
 
 @NgModule({
@@ -22,8 +21,6 @@ import { GenreListComponent } from './genre-list/genre-list.component';
     MovieListComponent,
     WatchlistPageComponent,
     NavComponent,
-    GenreListComponent,
-
   ],
   imports: [
     BrowserModule,
