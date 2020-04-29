@@ -1,25 +1,27 @@
 <main>
     <div class="search">
-        <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box" placeholder="search">
-        <div class="nav-item">
-                <select class="genreFilter" (change)="onChange()" [(ngModel)]="genreId">
-                    <option value="0" disabled>GENRES</option>
+        <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box" placeholder="Search Titles">
+        <div class="dropdown-filter">
+            <form name="genre">
+                <select name="genreForm" class="genreFilter" (change)="onChange()" [(ngModel)]="genreId">
+                    <option value="0" disabled>Genres</option>
                     <option name="genres" *ngFor="let genre of genreList" [value]="genre.id">{{genre.name}}</option>
                 </select>
-            </div>
-    </div>
+            </form>
+        </div>
         <section>
             <div class="movie-container">
                <div class="movie-item" *ngFor="let movie of movies?.results | slice:0:21">
                     <a routerLink="/detail/{{movie.id}}">
                     <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="poster" class="img img-responsive "/>
-                <div class="movie-list-description">
-                <div class="inner-movie-description">
-                    <span class="rating-container">{{movie.vote_average}}</span>
-                </div>
-                </div>
+                    <div class="movie-list-description">
+                        <div class="inner-movie-description">
+                            <span class="rating-container">{{movie.vote_average}}</span>
+                        </div>
+                    </div>
                     </a>
                 </div>
             </div>
         </section>
+    </div>
 </main>

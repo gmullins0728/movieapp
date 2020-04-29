@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
 import { StorageServiceModule } from 'ngx-webstorage-service';
 import { LocalStorageService } from './local-storage.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -29,7 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     StorageServiceModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule, MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [HttpClientModule, LocalStorageService],
   bootstrap: [AppComponent]
