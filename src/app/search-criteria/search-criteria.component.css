@@ -1,52 +1,58 @@
+.search {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
 
-input {
+
+input, .genreFilter {
     color: #ffffff;
     background-color: crimson;
     border: 1px solid crimson;
     border-radius: 20px;
-    width: 94%;
     padding: 3%;
-    margin-bottom: 10px;
+    width: 92%;
     font-size: 12px;
+    margin: 3px;
 }
 
-.movie-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+input {
+    max-width: 348px;
+}
+
+.genreFilter {
+    width: 354px;
+}
+
+input::placeholder {
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
 }
 
 @media only screen and (min-width: 768px) {
+
     .search {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
 
+    .movie-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
     input {
-        width: 25%;
+        width: 280px;
         padding: 10px;
     }
+
+    .genreFilter {
+        width: 280px;
+    }
 }
-
-@media only screen and (max-width: 768px) {
-    input {
-        width: 80%;
-    }
-
-    .movie-container {
-        display: inline-grid;
-        grid-template-columns: auto auto;
-        padding: 5px 10px;;
-    }
-    .movie-item {
-        width: 100%;
-        display: inline-grid;
-        flex-wrap: nowrap;
-        grid-template-columns: auto auto;
-        
-        justify-content: space-around;
-    }
-    
-}
-
