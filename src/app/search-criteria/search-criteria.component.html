@@ -4,7 +4,7 @@
         <div class="dropdown-filter">
             <form name="genre">
                 <select name="genreForm" class="genreFilter" (change)="onChange()" [(ngModel)]="genreId">
-                    <option value="0" disabled>Genres</option>
+                    <option [ngValue] ="undefined" selected>Genre</option>
                     <option name="genres" *ngFor="let genre of genreList" [value]="genre.id">{{genre.name}}</option>
                 </select>
             </form>
